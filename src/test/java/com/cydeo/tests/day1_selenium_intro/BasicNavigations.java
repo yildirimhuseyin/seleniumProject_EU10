@@ -15,6 +15,9 @@ public class BasicNavigations {
         // 2- Set up Create instance of the driver
         WebDriver driver = new ChromeDriver();
 
+        //  This line will max browser size
+        driver.manage().window().maximize();
+
         // 3- Go to the "https://www.tesla.com"
         driver.get("https://www.tesla.com");
 
