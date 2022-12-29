@@ -29,10 +29,11 @@ public class T1_xpath_cssSelector_practice {
         WebElement homeLink_ex1 = driver.findElement(By.xpath("//a[@class='nav-link']"));
         //WebElement homeLink_ex1= driver.findElement(By.cssSelector("a[class='nav-link']"));
         // Locate homeLink using cssSelector syntax #2
-        WebElement homeLink_ex2 = driver.findElement(By.xpath("a.nav-link"));
 
+        WebElement homeLink_ex2= driver.findElement(By.cssSelector("a.nav-link"));
         // Locate homeLink using cssSelector, href value
-        WebElement homeLink_ex3 = driver.findElement(By.xpath("a[href='/']"));
+
+        WebElement homeLink_ex3 = driver.findElement(By.cssSelector("a[href='/']"));
 
 
         //b. “Forgot password” header
@@ -41,7 +42,7 @@ public class T1_xpath_cssSelector_practice {
 
         // Locate header using xpath, and using text elements text "Forgot Password"
         // WebElement header_exx2 = driver.findElement(By.cssSelector("//h2[.='Forgot Password']"));
-        WebElement header_exx2 = driver.findElement(By.cssSelector("//h2[text()='Forgot Password']"));
+        WebElement header_exx2 = driver.findElement(By.xpath("//h2[text()='Forgot Password']"));
 
         //c. “E-mail” text
         WebElement emailLabel = driver.findElement(By.xpath("//label[@for='email']"));
@@ -82,6 +83,7 @@ public class T1_xpath_cssSelector_practice {
         //Then solve the task using XPATH only. Try to create 2 different
         //XPATH locator if possible
 
+        driver.close();
 
     }
 
