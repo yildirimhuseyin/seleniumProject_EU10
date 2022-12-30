@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 
 import java.util.concurrent.TimeUnit;
 
-public class T3_xpathLocatorPractic {
+public class T3_xpathLocatorPractice {
 
 
     public static void main(String[] args) {
