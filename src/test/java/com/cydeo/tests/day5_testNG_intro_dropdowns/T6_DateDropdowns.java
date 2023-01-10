@@ -32,7 +32,7 @@ public class T6_DateDropdowns {
 
 
         //2. Go to https://practice.cydeo.com/dropdown
-        driver.get("https://practice.cydeo.com/dropdown");
+        driver.get("https://practice.cydeo.cydeocom/dropdown");
 
         //3. Select “December 1st, 1923” and verify it is selected.
         //Select year using : visible text
